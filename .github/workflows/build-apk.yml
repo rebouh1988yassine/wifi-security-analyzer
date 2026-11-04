@@ -38,7 +38,7 @@ jobs:
             libncursesw5-dev \
             cmake \
             libffi-dev \
-            libssl-dev 
+            libssl-dev \ 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
