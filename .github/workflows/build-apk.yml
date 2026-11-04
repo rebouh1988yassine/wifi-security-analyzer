@@ -19,7 +19,6 @@ jobs:
         with:
           distribution: temurin
           java-version: "17"
-
       - name: Install dependencies
         run: |
           sudo apt update
@@ -30,6 +29,8 @@ jobs:
             python3-pip \
             python3-venv \
             autoconf \
+            automake \
+            build-essential \
             libtool \
             pkg-config \
             zlib1g-dev \
@@ -37,6 +38,7 @@ jobs:
             libncursesw5-dev \
             cmake \
             libffi-dev \
+            libssl-dev 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
